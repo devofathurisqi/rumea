@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.sites/
+.env*
+!.env.example
+qa/*.png
+qa/*.jpg
+*.zip
+contact-sheet.jpg
+private-assets/
+qa/*.json
+outputs/
