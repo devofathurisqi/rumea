@@ -1,3 +1,4 @@
+import FounderStory from './components/FounderStory';
 import { useEffect } from 'react';
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, MessageCircle } from 'lucide-react';
@@ -10,7 +11,7 @@ import Product from './pages/Product';
 import { getProduct, imageUrl } from './data/catalog';
 import { config } from './config';
 import { whatsappUrl } from './commerce';
-function About() { return <><section className="about-hero section"><div><span className="eyebrow">TENTANG RUMEA</span><h1>Ruang untuk<br />menjadi <em>dirimu.</em></h1><p>RUMEA adalah tentang pilihan yang terasa personal. Tentang warna yang kamu sukai, siluet yang menemanimu, dan keindahan yang tidak perlu berlebihan.</p><p>Kami menghadirkan pilihan hijab, pashmina, khimar, dan mukena agar kamu bisa menemukan padanan untuk keseharianmu. Sederhana, dengan perhatian pada setiap pilihan.</p><Link to="/koleksi" className="button">Temukan koleksimu <ArrowRight size={17} /></Link></div><div className="about-photo"><img src={imageUrl('gradasi.webp')} alt="Viscose Gradasi Blushy Rose — RUMEA" width="900" height="1200" /><span>THE ART OF EVERYDAY ELEGANCE</span></div></section><section className="brand-statement"><span className="eyebrow">CARA KAMI MELIHAT KEINDAHAN</span><h2>Bukan tentang banyak pilihan.<br />Tentang pilihan yang <em>berarti untukmu.</em></h2><p>Dengan informasi produk yang jelas dan percakapan yang hangat,<br />kami ingin membuat proses memilih terasa lebih mudah.</p></section><ShoppingSteps /></>; }
+function About() { return <><FounderStory hero /><ShoppingSteps /></>; }
 function Guide() { return <><div className="guide-intro section"><span className="eyebrow">PANDUAN BELANJA</span><h1>Dari pilihanmu,<br />ke <em>percakapan kita.</em></h1><p>Pemesanan RUMEA dilanjutkan secara personal melalui WhatsApp.</p></div><ShoppingSteps /><section className="guide-faq section"><h2>Hal yang ingin kamu <em>ketahui.</em></h2>{[
   ['Apakah produk pasti tersedia?', 'Koleksi yang ditampilkan merupakan pilihan dalam katalog. Ketersediaan warna dan varian akan kami konfirmasi melalui WhatsApp sebelum pembayaran.'],
   ['Bagaimana dengan harga “Tanya Harga”?', 'Harga beberapa koleksi perlu dikonfirmasi. Kamu tetap bisa menambahkannya ke tas. Produk ini tidak dimasukkan ke subtotal angka sampai harganya disepakati.'],
