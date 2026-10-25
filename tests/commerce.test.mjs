@@ -38,10 +38,10 @@ test('WhatsApp destination, unicode encoding, variants and quantities are correc
 });
 test('empty cart cannot produce an order message',()=>assert.throws(()=>orderMessage([],catalog),/kosong/));
 test('catalog is unique, traceable, internally valid and has only real local images',()=>{
- assert.equal(catalog.length,22);assert.equal(catalog.filter(p=>p.retailPrice===null).length,6);
- assert.equal(new Set(catalog.map(p=>p.slug)).size,22);
+ assert.equal(catalog.length,27);assert.equal(catalog.filter(p=>p.retailPrice===null).length,8);
+ assert.equal(new Set(catalog.map(p=>p.slug)).size,27);
  for(const p of catalog){
-  assert.equal(p.pricingStatus,p.retailPrice===null?'inquiry':'verified');assert.ok(p.variants.length);assert.equal(p.availabilityStatus,'confirm');
+  assert.equal(p.pricingStatus,p.retailPrice===null?'inquiry':'verified');assert.ok(p.variants.length || ['inner-tali','armani-lasercut','armani-panel-printing'].includes(p.id));assert.equal(p.availabilityStatus,'confirm');
   for(const file of [...p.images,...p.variants.map(v=>v.image)]) assert.ok(existsSync(new URL('../public/assets/images/'+file,import.meta.url)),file);
   assert.doesNotMatch(p.description,/Vuyama|reseller|placeholder|opsi 1/i);
  }

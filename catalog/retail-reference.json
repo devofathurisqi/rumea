@@ -1,0 +1,34 @@
+{
+  "verifiedOn": "2026-10-25",
+  "source": "Vuyama September 2026 pricelist, Ecer column, pages 5–6; Paris alias explicitly established on page 2",
+  "prices": {
+    "paris-legend": 29000,
+    "paris-japan": 49000,
+    "motif-tryspan": 79000,
+    "zoya-instan": 85000,
+    "hawa-instan": 49000,
+    "gana-instan": 55000,
+    "bamboo-spandex": 75000,
+    "printed-viscose": 99000,
+    "viscose-gradasi": 99000,
+    "bamboo-slip-on": 40000,
+    "airtech-ultrasoft": 75000,
+    "modal-viscose": 59000,
+    "viscose-highlight": 79000,
+    "aisha-khiban": 85000,
+    "hayla-khiban": 49000,
+    "inner-tali": 25000,
+    "mukena-segenggam-polos": 169000,
+    "armani-lasercut": 279000,
+    "armani-panel-printing": 349000
+  },
+  "unresolved": {
+    "mukena-armani": "The photographed Velvet Vol. 2 is not verified as the separately priced Lasercut or Panel Printing model.",
+    "mukena-segenggam-lily": "Segenggam Motif has a dash in the Ecer column; Lily photographs do not provide a retail price.",
+    "mukena-rayon-viscose": "Rayon Viscose Coquette is absent from the retail table; five product sheets show no selling price.",
+    "hampers-soft-box": "The available price sheet explicitly gives reseller costs; no verified retail price is supplied.",
+    "lea-oval-khiban": "Absent from the September retail table; no retail-price sheet in the collection folder.",
+    "zea-sport-instan": "Absent from the September retail table; collection contains photographs without a retail-price sheet.",
+    "armani-polka": "New October series has photographs but no verified retail reference in the supplied pricing table."
+  }
+}

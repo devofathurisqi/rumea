@@ -1,5 +1,10 @@
-export interface Variant { id: string; name: string; hex: string; image: string; family?: string; contain?: boolean }
+export interface Variant { id: string; name: string; hex: string; image: string; family?: string; contain?: boolean; reference?: boolean }
 export interface Product {
+  aliases?: string[];
+  legacyIds?: string[];
+  legacyVariants?: Variant[];
+  referenceImages?: string[];
+  pricingSource?: 'brand' | 'retail' | 'unresolved';
   id: string; slug: string; name: string; category: string; material: string | null;
   retailPrice: number | null; pricingStatus: 'verified' | 'inquiry'; description: string;
   measurements: string | null; images: string[]; variants: Variant[]; colorFamily: string;
